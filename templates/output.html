@@ -1,9 +1,22 @@
-<h1>Profile Created</h1>
-<table>
-  {% for key, value in output.items() : %}
-  <tr>
-    <td>{{key}}</td>
-    <td>{{value}}</td>
-  </tr>
-  {% endfor %}
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='output.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Profile Created</h1>
+    <table>
+      {% for key, value in output.items() : %}
+      <tr>
+        <td>{{key}}</td>
+        <td>{{value}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
