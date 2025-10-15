@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/create.css" />
+  </head>
+  <body>
+    <form action="/output" method="post">
+      <p>Soc Med Profile</p>
+
+      <label>Firstname:</label>
+      <input type="text" name="firstname" />
+
+      <label>Lastname:</label>
+      <input type="text" name="lastnames" />
+
+      <label>Sex:</label>
+      <input type="radio" name="sex" value="Male" /> Male
+      <input type="radio" name="sex" value="Female" /> Female
+
+      <label>Status:</label>
+      <select name="status">
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Complicated">It's Complicated</option>
+      </select>
+
+      <label>Location:</label>
+      <input type="text" name="location" />
+
+      <input type="submit" value="Create Profile" />
+    </form>
+  </body>
+</html>
